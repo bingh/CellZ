@@ -1,0 +1,253 @@
+.waterdropCell {
+	font-size: 14px;
+	overflow: hidden;
+	transition-property: border-color box-shadow color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+	border: 2px solid lightblue;
+	background-color: #fff;
+	border-radius: 0px 50% 50% 50%;
+	color: #557;
+
+}
+#cell {
+	font-size: 14px;
+	overflow: hidden;
+	transition-property: border-color box-shadow color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+	border: 4px solid steelblue;
+	background-color: #fff;
+	border-radius: 0px 50% 50% 50%;
+	color: #557;
+}
+#element_to_pop_up { 
+    background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	min-width: 350px;
+	padding: 25px;
+}
+
+#view_nodes { 
+    background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	width: 250px;
+	height: 300px;
+	padding: 25px;
+	overflow: auto;
+}
+
+#view_statistics {
+	background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	width: 250px;
+	height: 120px;
+	padding: 25px;
+	overflow: auto;
+	font-family:Century Gothic, sans-serif; 
+	font-size: 20px; 
+	color: lightblue;
+}
+
+.textArea {
+	background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	border: 3px solid lightblue;
+	font-family:Century Gothic, sans-serif; 
+	font-size: 14px; 
+	color: black;
+}
+.b-close{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+.waterdropCell:hover {
+	cursor: pointer;
+	box-shadow: 5px 5px 15px #667;
+	color: #335;
+	border-color: #335;
+}
+
+.link {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1.5px;
+}
+
+:focus { outline: none; }
+
+#button {
+	margin: 30px auto 0px auto;
+	width: 400px;
+}
+
+#cell_map {
+	width: 95%;
+	height: 100%;
+	border: 3px solid grey;
+	margin: 30px auto 0 auto;
+}
+
+#zoom_pane {
+	position: absolute;
+	background-color: #f5f5f5;
+	cursor: move;
+}
+
+#waterdropCells {
+	position: absolute;
+	width: 3280px;
+	height: 3280px;
+}
+
+.placeholder {
+	margin: 18% auto 0 auto;
+	padding: 0;
+	width: 64%;
+	height: 64%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+.placeholder_zoom {
+	height: 100%;
+}
+
+.cellAdd {
+	position: absolute;
+	right: 5%;
+	top:0;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background: url(../images/sp_cell.png) no-repeat -170px -60px;
+	 
+	border-radius:11px;
+	box-shadow: 3px 3px 3px #C0C0C0;
+}
+
+.cellAdd:hover {
+	cursor: pointer;
+}
+
+.cellDelete{
+	position: absolute;
+	left: 240px;
+	top:20px;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-image: url(../images/delete.png);
+	 
+}
+
+.cellDelete:hover {
+	cursor: pointer;
+}
+
+
+#addbutton:hover {
+	cursor: pointer;
+}
+
+.cellTop {
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.content {
+	margin-top: 20%;
+	height: 100%;
+	overflow: hidden;
+	font-family:Century Gothic, sans-serif; 
+	font-size: 14px; 
+	text-align: left;
+	border: none;
+}
+
+
+.cell_image {
+	margin: -20% 0 0 -100%;
+	width: 300%;
+	height: 20%;
+	background-color: white;
+}
+
+.mergedContent {
+	background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    width: 250px;
+    height: 300px;
+    padding: 25px;
+    overflow: auto;
+    font-family:Century Gothic, sans-serif; 
+    font-size: 16px; 
+    color: lightblue;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.userName {
+	position: absolute;
+	left: 10%;
+	top:0;
+	font-family:Century Gothic, sans-serif; 
+	font-size: 16px; 
+	color: lightblue;
+}
+
+.statisticsBtn {
+	font-family:Century Gothic, sans-serif; 
+	font-size: 14px; 
+	color: white;
+	margin-left: 20px;
+	margin-top: 6px;
+}
+.statisticsBtn:hover {
+	cursor: pointer;
+}
+
+.line_break {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.line_break2 {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+
+
+#zoom_pane svg {
+	position: absolute;
+}
+
+#cell {
+	border-radius: 50%;
+}

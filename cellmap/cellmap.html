@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="css/jquery.ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/cellz.css">
+	<link rel="stylesheet" type="text/css" href="css/create.css">
+	<link rel="stylesheet" type="text/css" href="css/thes.css">
+	<link rel="stylesheet" type="text/css" href="css/cellz_variation.css">
+	<link rel="stylesheet" type="text/css" href="css/cellz_pop.css">
+
+	<link rel="stylesheet" type="text/css" href="css/cellMap.css" />
+	<link rel="stylesheet" type="text/css" href="css/starview.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/anythingslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/tip-cellz.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<style type="text/CSS">
+		.main2{padding-top:1cm;width:auto; height:600px; margin: 0 auto;}
+		.upper{padding-top:2cm; width:1200px; height:300px; margin: 0 auto}
+		.middle{padding-top:0.5cm; width:1200px; height:300px; margin: 0 auto}
+		.lower{padding-top:0.5cm;width:1200px; height:300px; margin: 0 auto}
+		.left{ padding-bottom:1cm; width:1000px; height:200px; margin: 0 auto}
+		.right{padding-top:2cm; width:800px; height:200px; margin: 0 auto}
+		.box{border: 0px solid rgba(0, 0, 255, .1);}
+		.topic{font-size:20px;padding-bottom:0.5cm;}
+	</style>
+
+    <meta charset="utf-8">
+    <script type="text/javascript" src="d3/d3.v3.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery.panzoom.js"></script>
+	<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+	
+
+  </head>
+  
+<body>
+
+
+<!--header-->
+<div id="header">
+			<div class="gnb_area">
+				<div class="inner_section">
+					<h1><a href="index.html" name="/timeline/topic">Cellz</a></h1>
+					<div class="bubble">
+						<a href="#" class="btn_alert">	
+Notifications</a>
+					</div>
+					<ul class="nav">
+					<li class="on"><a href="#" class="nav_home" name="/timeline/topic">Home</a></li>
+					<li><a href="#" name="/user/me" class="nav_me">Me</a></li>
+					<li id="li_group">
+						<a href="#" class="nav_group" id="btn_open_group">Group</a>
+					</li>
+					</ul>
+					<a href="#" class="btn_project" id="favoriteGroupName"></a>
+					<div class="gnb_side" id="gnbProfileImage" userid="145">
+						<span class="btn_myinfo">
+							<a href="#" name="/user/timeline" class="user_image">
+								<img src="images/@timeline_people.png" width="22" height="22" alt="" style="margin-bottom: -2px;">
+								<span class="mask"></span>
+							</a>
+							<div href="#" class="user_name">Sandy</div>
+						</span>
+						<input type="hidden" id="userMail" value="user1">
+						<input type="hidden" id="companyName" value="CellZ">
+						<input type="hidden" id="companyNameEn" value="CellZ">
+						<input type="hidden" id="companyId" value="">
+						<a href="#" class="btn_search" id="gnb_search">Search</a>
+						<button class="statisticsBtn"><b><span style="font-size:18px">S</span>TATISTICS</b></button>
+					</div>
+
+				</div>
+			</div>
+			<form action="/search/all" method="post">
+			
+			<div class="search_area" style="display:none">
+			<fieldset>
+				<legend>View all</legend>
+				<label for="query" class="blind">Query</label>
+				<input type="text" name="query" class="input_search input_focus" value="" placeholder="Search for groups, people, files and cell">
+				<button type="submit" class="btn_search"><span class="blind">Submit</span></button>
+				<button type="button" class="btn_ly_cls"><span class="blind">Advance Search</span></button>
+			</fieldset>
+			</div>
+			</form>
+</div>
+<!-- header end -->
+
+
+<!-- container -->
+<div id="container">
+
+<!-- content -->
+<div id="content">
+
+<div id="tnc_outer" class="topic_bg">
+<div id="tnc_wrap" style="width: 100%; height: 100%; min-height: 1080px; left: 0px; background:#f2f6f9;">
+
+<div id="cellmap_wrap" style="width: 100%; height: 1080px; float: left; display: block;">
+	<div id="wrapCellMap" class="cellDisplay">
+    	<div id="cellMapNavi" class="map_path map_path_tenover" style="top: 49px;">	<div>		<h3 class="tit_path">MAP_PATH</h3>		<a href="#" class="btn_prev_path" style="display: none;">Previous Related Posts</a>		<span class="path_wrap">			<span class="path_lst" style="width: 108px; left: 0px;"><span class="pathList">	<strong class="pathItem ico_path_del">&nbsp;</strong></span><span class="pathList">	<a href="#" class="pathItem ico_path_c1" cellid="54" userid="145" ranking="1" celllive="live">cell_1</a></span><span class="pathList last">	<a href="#" class="pathItem ico_path_cp" cellid="56" userid="145" ranking="1" celllive="live">cell_1_0</a></span></span>			<span class="line">&nbsp;</span>		</span>		<a href="#" class="btn_next_path" style="display: none;">The related articles</a>	</div>	<a id="btn_back_timeline" href="index.html" class="btn_back_timeline">TIMELINE</a>	
+        
+                <div class="lst_option" style=" right:10px;">
+							<a class="view_cellmap"><span class="blind">View Cell</span></a>
+							<span class="view_option" id="btnSelectFilterWrap"><span id="btnSelectFilter" class="cellmap ui-draggable" style="left: 0px;"><span class="check">&nbsp;</span></span></span>
+							<a class="view_cell" href="timelinedetails.html"><span class="blind">View cell type</span></a>
+							</div>
+        </div><!-- "cellMapNavi end -->
+        
+        
+        <div id="cellMapController" class="map_control_area">
+            <div class="zoom control_box">
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+                <button class="zoomin" id="zoom_in">Zoom In</button>
+                <button class="zoomout" id="zoom_out">Zoom Out</button>
+            </div>
+		</div><!-- "cellMapController end -->
+        <div id="cellMap" class="wrapCellCanvas ui-draggable" style="width: 1920px; height: 1497.02px; left: -37.578125px; top: -448.71875px; display: block;">
+        
+        <!-- cell map please begain from here -->
+
+		<div id="zoom_pane"></div>
+
+
+		<!-- cell map please end from here -->
+        
+        </div><!-- cellMap end -->
+        
+        <div id="memberList" class="file_wrap_btm">	<div class="member_area default">		<span class="member_thm_area">			<a href="#" class="thm" userid="145">				<div class="img_area">					<span class="color_bar" style="background:#5e5e5e"><span class="spf mask_color">&nbsp;</span></span>					<img src="images/@timeline_people.png" width="22" height="22" alt="">					<span class="mask"></span>				</div>				<span class="layer_bot" ><strong>Sandy</strong><span class="arr"></span></span>			</a>		</span>	
+<div id="newCellNoti" class="new_al" style="top:6px;">		<span class="txt">News<strong href="#" class="num">0</strong></span>		<a href="#" class="btn_change"><span class="blind">Refresh</span></a>	</div>
+        </div></div>
+   		</div><!-- memberList end -->
+        
+</div><!-- "cellmap_wrap end -->
+</div><!-- "tnc_wrap end -->
+</div><!-- "tnc_outer end -->
+</div><!-- content end -->
+</div><!-- container end -->
+
+<!--
+
+<div id="footer" style="display: block;">
+	<p>Copyright © Cellz. All rights Reserved.</p>
+	<ul class="f_menu">
+	</ul>
+</div>
+
+-->
+
+</div>
+
+
+
+</div>
+</div>
+<div id="view_nodes">
+	<p class="node_info"></p>
+	<button class="cellDelete"></button>
+	<br>
+	<div class="line_break2"></div>
+
+	<ul id="children_content"></ul>
+	
+</div>
+
+<div id="view_statistics">
+	<p><b>Category: <span style="color:steelblue; font-family:Copperplate-Gothic-Light; font-size:24px">SPORTS</span></b></p>
+	<br>
+	<p><b>Comments Number: 102</b></p>
+	<br>
+	<p><b>Members Attended: 12</b></p>
+	
+</div>
+
+<div id="element_to_pop_up">
+	
+	<div style="font-family:Century Gothic, sans-serif; font-size: 18px; color: lightblue;"><b>Comment:</b></div>
+	<br>
+	<div>
+	<textarea class="textArea" rows="5" cols="60" >
+	</textarea>
+	</div>
+	<br/>
+	<div> 
+	<button id ="addbutton" style="font-family:Century Gothic, sans-serif;font-size: 16px; color: lightblue;"><b>Add Comment</b></button>
+	<br>
+	<br>
+	<div class="line_break2"></div>
+	<br>
+	<p class="node_info"></p>
+	</div>
+	
+</div>
+
+<div class="mergedContent">
+  <ul id="merged_content"></ul>
+<div>
+
+
+
+
+<script type="text/javascript" src="js/radial.js"></script>
+<script type="text/javascript" src="js/zoom.js"></script> 
+<script type="text/javascript">
+var url;
+$(function() {
+	
+	$('#cellMapSlider').bind({
+					mouseenter : function(e){
+						e.stopPropagation();
+						var $cellMapSliderBG = $('#cellMapSliderBG');
+						$(this).draggable({
+							axis: "y",
+							containment: "#slideArea",
+							scroll:false, 
+							grid:[0,18],
+							drag: function() {
+								var position = $(this).position();
+								$cellMapSliderBG.css('height' , position.top+20); 
+							},
+							stop: function() {
+								//var zoomIndex = parseInt($(this).position().top / 18);
+								//if(zoomIndex === 4){
+								//	CellMap.displayStarView(true);
+								//}else{
+								//	CellMap.displayStarView(false);
+								//	CellMap.cellMapTargetScaleIndex = zoomIndex;
+								//	CellMap.changeCellMapScale(zoomIndex);
+								//}
+							}
+						});
+					}
+				});
+	
+	$( "#btnSelectFilter" ).draggable({
+	axis: "x" 
+	,containment: '#btnSelectFilterWrap'
+	,stop: function( event, ui ) {
+		if (ui.position.left >= 23) {
+			//add stop event; $.util_pageMover.moveToTimeline(oFilter.o.timelineFilter);
+		} else {
+			$(ui.helper).css({
+				left: 0
+			});
+		}
+	}
+});
+	
+	$("body").mCustomScrollbar({
+	    scrollInertia: 150
+	    ,theme: 'light'
+	    ,advanced:{
+	        updateOnContentResize: true
+	    }
+		,callbacks: {
+			whileScrolling: function() {
+				var top;
+				if (mcs) {
+					top = -mcs.top;
+					if ($('#rail_0').length > 0) $('#rail_0').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_1').length > 0) $('#rail_1').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_2').length > 0) $('#rail_2').mCustomScrollbar("scrollTo", top);
+				}
+			}
+		}
+	});
+	$("#wrapCellMap #div_srcoll_area").mCustomScrollbar({
+	    scrollInertia: 150
+	    ,theme: 'light'
+	    ,advanced:{
+	        updateOnContentResize: true
+	    }
+	});
+	
+});
+</script>
+
+
+</body>
+</html>

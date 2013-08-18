@@ -1,0 +1,1284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CellZ</title>
+
+	<!--<script src="js/frame/jquery.min.js"></script>
+<script src="js/frame/jquery-ui.js"></script>
+<script src="js/plugins/jquery.poshytip.min.js"></script>
+<script src='js/cellz.js'></script>
+<script type="text/javascript" src='js/modules/template.js'></script>
+<script type="text/javascript" src='js/modules/template.cellbox.js'></script>
+<script type="text/javascript" src='js/modules/screen.js'></script>
+<script type="text/javascript" src='js/util.js'></script>
+
+<script src='js/common/util/klass.js'></script>
+<script src='js/common/util/urlParser.js'></script>
+<script src='js/common/util/pageMover.js'></script>
+<script src='js/common/util/notice.js'></script>
+<script src='js/common/util/nameCard.js'></script>
+<script src="js/common/util/format.js"></script>
+<script src="js/common/util/date.js"></script>
+<script src='js/common/util/message.js'></script>
+<script src='js/common/util/imageViewer.js'></script>
+<script src='js/common/util/peopleList.js'></script>
+<script src='js/common/util/searchPeople.js'></script>
+<script src='js/common/util/placeholder.js'></script>
+<script src='js/common/util/interval.js'></script>
+<script src='js/common/util/sharedNameCard.js'></script>
+<script src='js/common/util/popup.js'></script>
+-->
+<script type="text/javascript" src='js/modules/screen.js'></script>
+<script src="js/frame/jquery.min.js"></script>
+<script src="js/frame/jquery-ui.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mCustomScrollbar.js"></script>
+
+<script type="text/javascript" src='/resources/js/timeline/topicview.js'></script>
+
+<!--<script type="text/javascript" src="js/plugins/swfobject.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.anythingslider.js"></script>
+<script type="text/javascript" src='js/plugins/jquery.autosize.js'></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drag-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drag.live-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drop-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drop.live-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+-->
+<!--T**-->
+<script src="./assets/bootstrap.css"></script>
+<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-responsive.css">
+<!-- <script src="./assets/js/bootstrap-modal.js"></script> -->
+<script src="./assets/js/Chart.js"></script>
+
+
+<!-- <script src="./assets/js/jquery.js"></script> -->
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel1').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="./assets/js/holder/holder.js"></script>
+
+
+<!-- <script src="./assets/js/bootstrap-transition.js"></script>
+<script src="./assets/js/bootstrap-alert.js"></script> -->
+<!-- <script src="./assets/js/bootstrap-dropdown.js"></script>
+<script src="./assets/js/bootstrap-scrollspy.js"></script>
+<script src="./assets/js/bootstrap-tab.js"></script>
+<script src="./assets/js/bootstrap-tooltip.js"></script>
+<script src="./assets/js/bootstrap-popover.js"></script>
+<script src="./assets/js/bootstrap-button.js"></script>
+<script src="./assets/js/bootstrap-collapse.js"></script>
+<script src="./assets/js/bootstrap-carousel.js"></script>
+<script src="./assets/js/bootstrap-typeahead.js"></script> -->
+<!-- <script src="./assets/js/project.js"></script> -->
+<!--T**-->
+<!--T**-->
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.ui.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="css/cellz.css">
+<link rel="stylesheet" type="text/css" href="css/create.css">
+<link rel="stylesheet" type="text/css" href="css/thes.css">
+<link rel="stylesheet" type="text/css" href="css/cellz_variation.css">
+<link rel="stylesheet" type="text/css" href="css/cellz_pop.css">
+
+<link rel="stylesheet" type="text/css" href="css/cellMap.css" />
+<link rel="stylesheet" type="text/css" href="css/starview.css" />
+
+<link rel="stylesheet" type="text/css" href="css/anythingslider.css" />
+<link rel="stylesheet" type="text/css" href="css/tip-cellz.css" />
+
+</head>
+
+<body>
+<div id="wrap">
+
+<!--header-->
+<div id="header">
+	<div class="gnb_area">
+		<div class="inner_section">
+			<h1>
+				<a href="#" name="/timeline/topic">Cellz</a>
+			</h1>
+			<div class="bubble">
+				<a href="#" class="btn_alert">Notifications</a>
+			</div>
+			<ul class="nav">
+				<li class="on">
+					<a href="#" class="nav_home" name="/timeline/topic">Home</a>
+				</li>
+				<li>
+					<a href="#" name="/user/me" class="nav_me">Me</a>
+				</li>
+				<li id="li_group">
+					<a href="#" class="nav_group" id="btn_open_group">Group</a>
+				</li>
+			</ul>
+			<a href="#" class="btn_project" id="favoriteGroupName"></a>
+			<div class="gnb_side" id="gnbProfileImage" userid="145">
+				<span class="btn_myinfo">
+					<a href="#" name="/user/timeline" class="user_image">
+						<img src="images/@timeline_people.png" width="22" height="22" alt="" style="margin-bottom: -2px;">
+						<span class="mask"></span>
+					</a>
+					<div href="#" class="user_name">Sandy</div>
+				</span>
+				<input type="hidden" id="userMail" value="user1">
+				<input type="hidden" id="companyName" value="CellZ">
+				<input type="hidden" id="companyNameEn" value="CellZ">
+				<input type="hidden" id="companyId" value="">
+				<a href="#" class="btn_search" id="gnb_search">Search</a>
+
+				<form class="navbar-form form-inline pull-right">
+
+					<a href="#myModal5" role="button" class="btn btn-black" data-toggle="modal">Statistics</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<form action="/search/all" method="post">
+
+		<div class="search_area" style="display:none">
+			<fieldset>
+				<legend>View all</legend>
+				<label for="query" class="blind">Query</label>
+				<input type="text" name="query" class="input_search input_focus" value="" placeholder="Search for groups, people, files and cell">
+				<button type="submit" class="btn_search">
+					<span class="blind">Submit</span>
+				</button>
+				<button type="button" class="btn_ly_cls">
+					<span class="blind">Advance Search</span>
+				</button>
+			</fieldset>
+		</div>
+	</form>
+</div>
+<!-- header end -->
+
+<!-- container -->
+<div id="container">
+
+	<!-- content -->
+	<div id="content">
+
+		<div id="tnc_outer" class="topic_bg">
+			<div id="tnc_wrap" style="width: 2732px; height: auto; min-height: 430px; left: 0px;">
+				<div id="timeline_wrap" style="width: 50%; float: left; display: block;">
+					<!-- topicTopWrap-->
+					<div class="topicTopWrap">
+
+						<!--top menu-->
+						<div class="topicTopMenu positionFixElem">
+							<div class="cellz_topic_bg"></div>
+							<div class="celmap_top">
+								<div class="celmap_tbg">
+									<div class="celmap_option">
+										<div class="f_group">
+											<ul>
+												<li class="on">
+													<a class="follow selectTimelineFilter" href="#" value="FOLLOWING">
+														<span class="blind">Follow</span>
+													</a>
+												</li>
+												<li>
+													<a class="company selectTimelineFilter" href="#" value="COMPANY">
+														<span class="blind">Company</span>
+													</a>
+												</li>
+												<li>
+													<a class="group selectTimelineFilter" href="#" value="GROUPS">
+														<span class="blind">Group</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="lst_option">
+											<a class="view_cellmap">
+												<span class="blind">View Cell</span>
+											</a>
+											<span class="view_option" id="btnSelectFilterWrap">
+												<span id="btnSelectFilter" class="cellmap ui-draggable">
+													<span class="check">&nbsp;</span>
+												</span>
+											</span>
+											<a class="view_cell" href="timeline.html">
+												<span class="blind">View cell type</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="topicview_new" class="new_mark" style="display: none;">
+								<a href="#" id="btnNewTimeline">
+									<p>NEW</p> <em id="newCount"></em>
+								</a>
+							</div>
+
+						</div>
+
+						<!--cellz topic-->
+
+						<div class="topicTop positionFixElem">
+							<div class="topic_layer">
+								<div class="cellz_topic_tit" style="top:102px">
+									<span class="tit">
+										<span class="blind">Cellz</span>
+									</span>
+									<span class="btn_sec">
+										<a href="#"></a>
+									</span>
+									<span class="tit tit2">
+										<span class="blind">Topic</span>
+									</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- topicTopWrap end -->
+
+					<div class="section_topicview positionFixElem" style="left: 50%;">
+						<!-- cell topic please begain from here -->
+
+						<div id="topicView" class="cellDisplay">
+
+							<div id="rail_0" class="rail rail_0 mCustomScrollbar _mCS_4">
+								<div class="mCustomScrollBox mCS-light" id="mCSB_4" style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+									<div class="mCSB_container" style="position: relative; top: 0px;">
+										<div class="rail_inner">
+
+											<!--Here is the location for modification-->
+											<div id="topic_146_15" class="rowtype4_0_1 cell_bg cell" recent_cell_id="61" recent_cell_user_id="145">
+												<div class="rowtype4_0_bg_1"></div>
+												<div class="cellview_area IMAGE" style="top: 103px;">
+													<div class="timeline_box rowtype4_0_1 timeline_p_IMAGE" id="15" same_cell_id="15" cell_id="15" cell_user_id="146">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="#" class="nameCard" userid="146">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/Max.jpeg" alt=""></div> <strong class="name">Max</strong>
+																</a>
+																<span class="pr pr_photo sp">image</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="146" group_name="" profile_image="/api/v1/file/thumbnail?fname=146_1d40b43e36f652f1062be9e747065331&amp;w=31&amp;h=30">담기</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/19</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																16
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">&nbsp;CMU people are doing really great work.</span>
+															</div>
+															<a href="#" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+															<div class="attachments">
+																<ul class="img_group imageViewer ">
+																	<li class=" " kind="image" auth="">
+																		<div class="imgInnerSection">
+																			<h2 class="imgTitle">
+																				<span class="fileTitle">[Ver. 01] 00.jpg</span>
+																				<span class="fileInfo">file : 00.jpg (59kb)</span>
+																			</h2>
+																			<span class="btnImageWrap">
+																				<span class="wrapInner">
+																					<a href="#" class="btnImage">
+																						<img src="/api/v1/file/thumbnail?fname=146_6b40f6ce86e3d45174be0667a45394ee&amp;h=240&amp;w=400" alt="" file_name="146_6b40f6ce86e3d45174be0667a45394ee"></a>
+																				</span>
+																				<div class="img_ln">
+																					<div class="btn_area">
+																						<a class="down file_validation" href="/api/v1/file/download?fname=146_6b40f6ce86e3d45174be0667a45394ee">
+																							<span class="layer_bot">
+																								다운로드
+																								<span class="arr"></span>
+																							</span>
+																						</a>
+																						<a class="info_view file_validation" href="/file/info?fname=146_6b40f6ce86e3d45174be0667a45394ee" file_name="146_6b40f6ce86e3d45174be0667a45394ee&quot;">
+																							<span class="layer_bot">
+																								fileinfo
+																								<span class="arr"></span>
+																							</span>
+																						</a>
+																					</div>
+																					<span class="bg"></span>
+																				</div>
+																			</span>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="btn_follow">
+															<a href="#" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/4_stop.gif) no-repeat 0 0;" step="4">
+															<img src="images/4_stop.gif" step="4" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="#" class="add sp">more</a>
+															<a href="#" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="15" cell_user_id="146">
+																Cellmap <em>16</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			Like
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="15" user_id="146" type="LIKE">3</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnShare">Share</a>
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="15" user_id="146" type="SHARE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="topic_145_10" class="rowtype4_2_2 cell_bg cell on" recent_cell_id="15" recent_cell_user_id="145">
+												<div class="rowtype4_2_bg_2"></div>
+												<div class="cellview_area SAY" style="top: 45px;">
+													<div class="timeline_box noname rowtype4_2_2 timeline_p_SAY" id="10" same_cell_id="10" cell_id="10" cell_user_id="145">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="#" class="nameCard" userid="145">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/Winnie.jpeg" alt=""></div>
+																		 <strong class="name">Winnie</strong>
+																</a>
+																<span class="pr pr_sns sp">undefined</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="145" user_name="신명호" group_name="" profile_image="/api/v1/file/thumbnail?fname=145_25490d7df88058ca3c9191853b6f5778&amp;w=31&amp;h=30">Add</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/18</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																7
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">we are at wean hall.</span>
+															</div>
+															<a href="#" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+														</div>
+														<div class="btn_follow">
+															<a href="#" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/2_stop.gif) no-repeat 0 0;" step="2">
+															<img src="images/2_stop.gif" step="2" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="#" class="add sp">more</a>
+															<a href="#" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="10" cell_user_id="145">
+																Cellmap
+																<em>7</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnLike">Like</a>
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="10" user_id="145" type="LIKE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			Share
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="10" user_id="145" type="SHARE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn">
+																<a class="pr_del sp btnRemoveCell" href="#">cell 삭제</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mCSB_scrollTools" style="position: absolute; display: block;">
+										<div class="mCSB_draggerContainer">
+											<div class="mCSB_dragger" style="position: absolute; height: 347px; top: 206px;" oncontextmenu="return false;">
+												<div class="mCSB_dragger_bar" style="position: relative; line-height: 347px;"></div>
+											</div>
+											<div class="mCSB_draggerRail"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="rail_1" class="rail rail_1 mCustomScrollbar _mCS_5">
+								<a href="cellmap.html">
+								<div class="mCustomScrollBox mCS-light" id="mCSB_5" style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+									<div class="mCSB_container" style="position: relative; top: 0px;">
+										<div class="rail_inner">
+											<div id="topic_147_2" class="rowtype4_0_3 cell_bg cell" recent_cell_id="58" recent_cell_user_id="145">
+												<div class="rowtype4_0_bg_3"></div>
+												<div class="cellview_area DOCUMENT" style="top: 86px;">
+													<div class="timeline_box rowtype4_0_3 timeline_p_DOCUMENT" id="2" same_cell_id="2" cell_id="2" cell_user_id="147">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="cellmap.html" class="nameCard" userid="147">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/@timeline_people.png" alt=""></div>
+																	<strong class="name">Sandy</strong>
+																</a>
+																<span class="pr pr_file sp">file</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="cellmap.html" class="btnAddPeopleToCellbox pr_put sp" user_id="147"  group_name="" profile_image="/api/v1/file/thumbnail?fname=147_466d4557e6984c42e37987f314182585&amp;w=31&amp;h=30">Add</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/19</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																26
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">
+																	
+																	In terms of price attractive product. If you look at the unit price list with a 15% cheaper than the competition, you know I'm in.
+															
+																</span>
+															</div>
+															<a href="cellmap.html" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+															<div class="attachments">
+																<div class="word_group  ">
+																	<a href="cellmap.html">
+																		<span class="icon sp_file sp">DOC</span>
+																	</a>
+																	<div class="word_data">
+																		<span class="tlt">
+																			<a class="file_vaildation" href="cellmap.html">[Ver.01]2007~2012_Item unit price list.xlsx</a>
+																		</span>
+																		<p>
+																			<span class="fileOrigin">File : [Ver.01]2007~2012_Item unit price list.xlsx (89KB)</span>
+																			<br>
+																			<span class="date">Date: 2013/06/19 AM 03:17 (by Sandy)</span>
+																		</p>
+																	</div>
+																	<div class="img_ln">
+																		<div class="btn_area">
+																			<a class="down file_validation" href="/api/v1/file/download?fname=147_5c7cd05587fe8f298e06df5c39fbb3c4">
+																				<span class="layer_bot">
+																					다운로드
+																					<span class="arr"></span>
+																				</span>
+																			</a>
+																			<a class="info_view file_validation" href="cellmap.html">
+																				<span class="layer_bot">
+																					fileinfo
+																					<span class="arr"></span>
+																				</span>
+																			</a>
+																		</div>
+																		<span class="bg"></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="btn_follow">
+															<a href="cellmap.html" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/5_stop.gif) no-repeat 0 0;" step="5">
+															<img src="images/5_stop.gif" step="5" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="cellmap.html" class="add sp">more</a>
+															<a href="cellmap.htm;" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="2" cell_user_id="147">
+																Cellmap
+																<em>26</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			Like
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="2" user_id="147" type="LIKE">2</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			<a href="cellmap.html" class="btnShare">Share</a>
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="2" user_id="147" type="SHARE">1</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn"></div>
+														</div>
+													</div>
+												</div>
+												<div class="tx_area" style="display: block;">
+													<div class="wrap_ellipsis">
+														<span class="_ellipsis">
+															<span class="file_type2 file">file</span>
+															<a href="cellmap.html">[Ver.01]2007~2012_Item unit price list.xlsx</a>
+														</span>
+													</div>
+												</div>
+											</a>
+											</div>
+											<div id="topic_145_2" class="rowtype4_0_4 cell_bg cell" recent_cell_id="9" recent_cell_user_id="145">
+												<div class="rowtype4_0_bg_4"></div>
+												<div class="cellview_area DOCUMENT" style="top: 94px;">
+													<div class="timeline_box rowtype4_0_4 timeline_p_DOCUMENT" id="2" same_cell_id="2" cell_id="2" cell_user_id="145">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="#" class="nameCard" userid="145">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/Jason.jpeg" alt=""></div>
+																	<strong class="name">Jason</strong>
+																</a>
+																<span class="pr pr_file sp">file</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="145" user_name="신명호" group_name="" profile_image="#">Tom</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/18</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																14
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">Don't forget.</span>
+															</div>
+															<a href="#" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+															<div class="attachments">
+																<div class="word_group  ">
+																	<a href="/file/info?fname=145_db608ea7cf276d78428cb397996a8adc">
+																		<span class="icon sp_file sp">DOC</span>
+																	</a>
+																	<div class="word_data">
+																		<span class="tlt">
+																			<a class="file_vaildation" href="/file/info?fname=145_db608ea7cf276d78428cb397996a8adc">[Ver.14]보안점검계획_XX시스템.xls</a>
+																		</span>
+																		<p>
+																			<span class="fileOrigin">File : 보안점검계획_CIS_공통.xls (53KB)</span>
+																			<br>
+																			<span class="date">작성일 : 2013/06/18 PM 10:13 (by 사용자1)</span>
+																			CIS 공통 빠진 부분이 있어서 다시 업데이트 했습니다.
+																		</p>
+																	</div>
+																	<div class="img_ln">
+																		<div class="btn_area">
+																			<a class="down file_validation" href="/api/v1/file/download?fname=145_db608ea7cf276d78428cb397996a8adc">
+																				<span class="layer_bot">
+																					다운로드
+																					<span class="arr"></span>
+																				</span>
+																			</a>
+																			<a class="info_view file_validation" href="/file/info?fname=145_db608ea7cf276d78428cb397996a8adc">
+																				<span class="layer_bot">
+																					fileinfo
+																					<span class="arr"></span>
+																				</span>
+																			</a>
+																		</div>
+																		<span class="bg"></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="btn_follow">
+															<a href="#" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/4_stop.gif) no-repeat 0 0;" step="4">
+															<img src="images/4_stop.gif" step="4" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="#" class="add sp">more</a>
+															<a href="#" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="2" cell_user_id="145">
+																Cellmap
+																<em>14</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnLike">Like</a>
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="2" user_id="145" type="LIKE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			Share
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="2" user_id="145" type="SHARE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn">
+																<a class="pr_del sp btnRemoveCell" href="#">cell 삭제</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="tx_area" style="display: block;">
+													<div class="wrap_ellipsis">
+														<span class="_ellipsis">
+															<span class="file_type2 file">file</span>
+															<a href="/api/v1/file/download?fname=145_db608ea7cf276d78428cb397996a8adc">[Ver.14]보안점검계획_XX시스템.xls</a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<a class="btn_cellmore" href="#">More</a>
+										</div>
+									</div>
+									<div class="mCSB_scrollTools" style="position: absolute; display: block;">
+										<div class="mCSB_draggerContainer">
+											<div class="mCSB_dragger" style="position: absolute; height: 276px; top: 277px;" oncontextmenu="return false;">
+												<div class="mCSB_dragger_bar" style="position: relative; line-height: 276px;"></div>
+											</div>
+											<div class="mCSB_draggerRail"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="rail_2" class="rail rail_2 mCustomScrollbar _mCS_6">
+								<div class="mCustomScrollBox mCS-light" id="mCSB_6" style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+									<div class="mCSB_container" style="position: relative; top: 0px;">
+										<div class="rail_inner">
+											<div id="topic_145_53" class="rowtype4_2_5 cell_bg cell" recent_cell_id="56" recent_cell_user_id="145">
+												<div class="rowtype4_2_bg_5"></div>
+												<div class="cellview_area SAY" style="top: 45px;">
+													<div class="timeline_box noname rowtype4_2_5 timeline_p_SAY" ancestor_cell_id="52" ancestor_user_id="145" id="53" same_cell_id="53" cell_id="53" cell_user_id="145">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="#" class="nameCard" userid="145">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/@2timeline_people.png" alt=""></div>
+																	<strong class="name">Tom</strong>
+																</a>
+																<span class="pr pr_sns sp">undefined</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="145" user_name="신명호" group_name="" profile_image="/api/v1/file/thumbnail?fname=145_25490d7df88058ca3c9191853b6f5778&amp;w=31&amp;h=30">Add</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/28</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																4
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">this is a place&nbsp;just to test everything....</span>
+															</div>
+															<a href="#" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+														</div>
+														<div class="btn_follow">
+															<a href="#" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/2_stop.gif) no-repeat 0 0;" step="2">
+															<img src="images/2_stop.gif" step="2" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="#" class="add sp">more</a>
+															<a href="#" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="53" cell_user_id="145">
+																Cellmap
+																<em>4</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnLike">Like</a>
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="53" user_id="145" type="LIKE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			Share
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="53" user_id="145" type="SHARE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn">
+																<a class="pr_del sp btnRemoveCell" href="#">cell 삭제</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="topic_147_4" class="rowtype4_0_6 cell_bg cell" recent_cell_id="39" recent_cell_user_id="145">
+												<div class="rowtype4_0_bg_6"></div>
+												<div class="cellview_area SAY" style="top: 121px;">
+													<div class="timeline_box rowtype4_0_6 timeline_p_SAY" id="4" same_cell_id="4" cell_id="4" cell_user_id="147">
+														<div class="timeline_top">
+															<div class="profile">
+																<a href="#" class="nameCard" userid="147">
+																	<div class="photo">
+																		<span class="mask sp"></span>
+																		<img src="images/Camile.jpeg" alt=""></div>
+																	<strong class="name">Camile</strong>
+																</a>
+																<span class="pr pr_sns sp">undefined</span>
+																<div class="put_bg">
+																	<span class="put_maskl sp"></span>
+																	<span class="put_maskr sp"></span>
+																</div>
+																<div class="put">
+																	<a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="147" user_name="구자욱" group_name="" profile_image="/api/v1/file/thumbnail?fname=147_466d4557e6984c42e37987f314182585&amp;w=31&amp;h=30">담기</a>
+																</div>
+															</div>
+															<div class="info">
+																<span class="time">06/19</span>
+															</div>
+														</div>
+														<div class="cellmap cellmapCount">
+															<a class="view_count" href="#">
+																<span class="bg_l"></span>
+																21
+																<span class="bg_r"></span>
+															</a>
+														</div>
+														<div class="content">
+															<div class="txt_group">
+																<span class="">In the security side of the document with the name FASOO.</span>
+															</div>
+															<a href="#" class="btnFold clse">
+																펼치기
+																<span class="sp"></span>
+															</a>
+														</div>
+														<div class="btn_follow">
+															<a href="#" class="null">
+																<span class="blind">Map follow</span>
+															</a>
+														</div>
+														<div class="circle" style="width: 210px; height: 132px; background: url(images/5_stop.gif) no-repeat 0 0;" step="5">
+															<img src="images/5_stop.gif" step="5" alt=""></div>
+														<div class="cellmap cellUp">
+															<a href="#" class="add sp">more</a>
+															<a href="#" class="addover sp">Add</a>
+															<div class="cellmap_box" cell_id="4" cell_user_id="147">
+																Cellmap
+																<em>21</em>
+																<span class="sp"></span>
+															</div>
+															<p class="cellmap_box_end"></p>
+														</div>
+														<div class="timeline_bot">
+															<ul>
+																<li class="common_like">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnLike">Like</a>
+																			<span class="layer_bot">
+																				Like this cell
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd class="first">
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="4" user_id="147" type="LIKE">0</span>
+																		</dd>
+																	</dl>
+																</li>
+																<li class="common_share">
+																	<dl>
+																		<dt>
+																			<a href="#" class="btnShare">Share</a>
+																			<span class="layer_bot">
+																				Share this your people
+																				<span class="arr"></span>
+																			</span>
+																		</dt>
+																		<dd>
+																			<span class="sp"></span>
+																			<span class="num countLayer" cell_id="4" user_id="147" type="SHARE">1</span>
+																		</dd>
+																	</dl>
+																</li>
+															</ul>
+															<div class="btn"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mCSB_scrollTools" style="position: absolute; display: block;">
+										<div class="mCSB_draggerContainer">
+											<div class="mCSB_dragger" style="position: absolute; height: 347px; top: 206px;" oncontextmenu="return false;">
+												<div class="mCSB_dragger_bar" style="position: relative; line-height: 347px;"></div>
+											</div>
+											<div class="mCSB_draggerRail"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- topicView end here -->
+
+						<!-- cell topic please end from here -->
+
+					</div>
+					<div class="topicviewHeightClone" style="height: 1080px;"></div>
+
+				</div>
+				<!-- "timeline_wrap end -->
+			</div>
+			<!-- "tnc_wrap end -->
+		</div>
+		<!-- "tnc_outer end -->
+	</div>
+	<!-- content end -->
+</div>
+<!-- container end -->
+
+<!--footer-->
+
+<div id="footer">
+	<div class="inner_section">
+		<div class="footer_cont">
+			<p class="flogo">
+				<span class="blind">Cellz</span>
+			</p>
+			<ul class="f_menu"></ul>
+			<p class="copyright">
+				<span class="bu_dot"></span>
+				Copyright © Cellz. All rights Reserved.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!--footer end-->
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var url;
+$(function() {
+	$( "#btnSelectFilter" ).draggable({
+	axis: "x" 
+	,containment: '#btnSelectFilterWrap'
+	,stop: function( event, ui ) {
+		if (ui.position.left >= 23) {
+			//add stop event; $.util_pageMover.moveToTimeline(oFilter.o.timelineFilter);
+		} else {
+			$(ui.helper).css({
+				left: 0
+			});
+		}
+	}
+});
+	$("#wrap").mCustomScrollbar({
+	    scrollInertia: 150
+	    ,theme: 'light'
+	    ,advanced:{
+	        updateOnContentResize: true
+	    }
+		,callbacks: {
+			whileScrolling: function() {
+				var top;
+				if (mcs) {
+					top = -mcs.top;
+					if ($('#rail_0').length > 0) $('#rail_0').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_1').length > 0) $('#rail_1').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_2').length > 0) $('#rail_2').mCustomScrollbar("scrollTo", top);
+				}
+			}
+		}
+	});
+
+	//$("#wrapCellMap #div_srcoll_area").mCustomScrollbar({
+	//    scrollInertia: 150
+	//    ,theme: 'light'
+	//    ,advanced:{
+	//        updateOnContentResize: true
+	//    }
+	//});
+	
+});
+</script>
+
+<!--T**-->
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+<h3 id="myModalLabel">More Information</h3>
+</div>
+<div class="modal-body">
+	<div style="width:500px;height:600px;">
+			<canvas id="doughnut" height="300" width="200"></canvas>
+			<canvas id="line" height="300" width="200"></canvas>
+			
+		</div>
+	
+
+
+	<script>
+
+		var barChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : [65,59,90,81,56,55,40]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					data : [28,48,40,19,96,27,100]
+				}
+			]
+			
+		}
+
+	
+	
+
+		// var doughnutData = [
+		// 		{
+		// 			value: 30,
+		// 			color:"#BA55D3"  //medium orchid	#BA55D3	(186,85,211)   1
+		// 		},
+		// 		{
+		// 			value : 50,
+		// 			color : "#FF6347"  //tomato	#FF6347	(255,99,71)    2
+		// 		},
+		// 		{
+		// 			value : 80,
+		// 			color : "#00FFFF"  //Cyan / Aqua	#00FFFF	(0,255,255)   3
+		// 		},
+		// 		{
+		// 			value : 40,
+		// 			color : "#00FA9A"  //medium spring green	#00FA9A	(0,250,154)  4
+   
+		// 		},
+		// 		{
+		// 			value : 70,
+		// 			color : "#FFB6C1"   //light pink	#FFB6C1	(255,182,193)   5
+		// 		},
+		// 		{
+		// 			value : 60,
+		// 			color : "#FFA500"  //orange	#FFA500	(255,165,0)    6
+		// 		}
+			
+		// 	];
+var lineChartData = {
+			labels : ["","","","","","",""],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [65,59,90,81,56,55,40]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					data : [28,48,40,19,96,27,100]
+				}
+			]
+			
+		};
+	new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(doughnutData);
+	new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData);
+	</script>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+<!-- end of modal -->
+<!--T**-->
+
+<!--T new-->
+   
+       <!-- Modal -->
+              <div id="myModal5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 id="myModalLabel">More Information</h3>
+              </div>
+              <div class="modal-body">
+                  <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./assets/img/examples/slide-04.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <!-- <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/img/examples/slide-06.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <!-- <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+              <!-- <a class="btn btn-large btn-primary" href="#">Learn more</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!--Here is the third method-->
+        <div class="item">
+          <img src="./assets/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <!-- <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+              <!-- <a class="btn btn-large btn-primary" href="#">Browse gallery</a> -->
+            </div>
+          </div>
+        </div>
+        <!--There is the third method-->
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">></a>
+    </div><!-- /.carousel -->
+              </div>
+              <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+              </div>
+              <!-- end of modal -->
+    <!--T-->
+
+<!--T new-->
+
+</body>
+</html>

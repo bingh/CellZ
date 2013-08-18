@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CellZ</title>
+
+
+
+
+<!--<script src="js/frame/jquery.min.js"></script>
+<script src="js/frame/jquery-ui.js"></script>
+<script src="js/plugins/jquery.poshytip.min.js"></script>
+<script src='js/cellz.js'></script>
+<script type="text/javascript" src='js/modules/template.js'></script>
+<script type="text/javascript" src='js/modules/template.cellbox.js'></script>
+<script type="text/javascript" src='js/modules/screen.js'></script>
+<script type="text/javascript" src='js/util.js'></script>
+
+<script src='js/common/util/klass.js'></script>
+<script src='js/common/util/urlParser.js'></script>
+<script src='js/common/util/pageMover.js'></script>
+<script src='js/common/util/notice.js'></script>
+<script src='js/common/util/nameCard.js'></script>
+<script src="js/common/util/format.js"></script>
+<script src="js/common/util/date.js"></script>
+<script src='js/common/util/message.js'></script>
+<script src='js/common/util/imageViewer.js'></script>
+<script src='js/common/util/peopleList.js'></script>
+<script src='js/common/util/searchPeople.js'></script>
+<script src='js/common/util/placeholder.js'></script>
+<script src='js/common/util/interval.js'></script>
+<script src='js/common/util/sharedNameCard.js'></script>
+<script src='js/common/util/popup.js'></script>-->
+
+
+
+<script src="js/frame/jquery.min.js"></script>
+<script src="js/frame/jquery-ui.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--<script type="text/javascript" src="js/plugins/swfobject.js"></script>
+
+<script type="text/javascript" src="js/plugins/jquery.anythingslider.js"></script>
+<script type="text/javascript" src='js/plugins/jquery.autosize.js'></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drag-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drag.live-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drop-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.event.drop.live-2.2.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>-->
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.ui.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="css/cellz.css">
+<link rel="stylesheet" type="text/css" href="css/create.css">
+<link rel="stylesheet" type="text/css" href="css/thes.css">
+<link rel="stylesheet" type="text/css" href="css/cellz_variation.css">
+<link rel="stylesheet" type="text/css" href="css/cellz_pop.css">
+
+<link rel="stylesheet" type="text/css" href="css/cellMap.css" />
+<link rel="stylesheet" type="text/css" href="css/starview.css" />
+
+<link rel="stylesheet" type="text/css" href="css/anythingslider.css" />
+<link rel="stylesheet" type="text/css" href="css/tip-cellz.css" />
+
+</head>
+
+<body>
+
+
+<!--header-->
+<div id="header">
+			<div class="gnb_area">
+				<div class="inner_section">
+					<h1><a href="cellmap.html" name="/timeline/topic">Cellz</a></h1>
+					<div class="bubble">
+						<a href="#" class="btn_alert">	
+Notifications</a>
+					</div>
+					<ul class="nav">
+					<li class="on"><a href="#" class="nav_home" name="/timeline/topic">Home</a></li>
+					<li><a href="#" name="/user/me" class="nav_me">Me</a></li>
+					<li id="li_group">
+						<a href="#" class="nav_group" id="btn_open_group">Group</a>
+					</li>
+					</ul>
+					<a href="#" class="btn_project" id="favoriteGroupName"></a>
+					<div class="gnb_side" id="gnbProfileImage" userid="145">
+						<span class="btn_myinfo">
+							<a href="#" name="/user/timeline" class="user_image">
+								<img src="images/@timeline_people.png" width="22" height="22" alt="" style="margin-bottom: -2px;">
+								<span class="mask"></span>
+							</a>
+							<div href="#" class="user_name">Sandy</div>
+						</span>
+						<input type="hidden" id="userMail" value="user1">
+						<input type="hidden" id="companyName" value="CellZ">
+						<input type="hidden" id="companyNameEn" value="CellZ">
+						<input type="hidden" id="companyId" value="">
+						<a href="#" class="btn_search" id="gnb_search">Search</a>
+					</div>
+				</div>
+			</div>
+			<form action="/search/all" method="post">
+			
+			<div class="search_area" style="display:none">
+			<fieldset>
+				<legend>View all</legend>
+				<label for="query" class="blind">Query</label>
+				<input type="text" name="query" class="input_search input_focus" value="" placeholder="Search for groups, people, files and cell">
+				<button type="submit" class="btn_search"><span class="blind">Submit</span></button>
+				<button type="button" class="btn_ly_cls"><span class="blind">Advance Search</span></button>
+			</fieldset>
+			</div>
+			</form>
+</div>
+<!-- header end -->
+
+
+<!-- container -->
+<div id="container">
+
+<!-- content -->
+<div id="content">
+
+<div id="tnc_outer">
+	<div id="tnc_wrap" style="width: 2732px; height: auto; min-height: 430px; left: 0px;">
+		<div id="timeline_wrap" style="width: 50%; float: left; display: block;">
+
+				
+<div id="contentsWrap" class="inner_section">
+					<div class="section_timeline">
+						<div><!-- span id="cellAdd">cellAdd</span --></div> 
+						<div class="timeline_lst">
+							<a id="btn_back_timeline" href="timeline.html" class="btn_back_timeline">Back</a>
+							<!-- <div class="tab_area_s toggle">
+								<a id="selectTimelineViewCell" value="CELL" class="cell on" href="#">Cell</a>
+								<a id="selectTimelineView" value="CELLMAP" class="cellmap" href="/timeline/topic">Cellmap</a>
+							</div> -->
+							<div class="tab_area toggle">
+								<a class="view_cellmap" href="#"><span class="blind">Cellmap</span>
+									<span style="left:-36px" class="noti_area"><span class="noti">Sort by Cellmap<span class="ico_arrow">&nbsp;</span></span></span>							
+								</a>
+								<span class="view_option" id="btnSelectFilterWrap"><span id="btnSelectFilter" class="cellmap ui-draggable"><span class="check">&nbsp;</span></span></span>							
+								<a class="view_cell"><span class="blind">cell</span>
+									<span style="left:-27px" class="noti_area"><span class="noti">Sort by Cell<span class="ico_arrow">&nbsp;</span></span></span>	
+								</a>
+							</div>
+							<span class="bg bg_l sp2"></span><span class="bg bg_r sp2"></span>
+						</div>
+						<div id="timeline_box_new" class="timeline_box_new_1" style="display: none;">
+							<a href="#" id="btnNewTimeline">
+								News <span class="new_num"><span class="num"><em id="newCount"></em></span></span>
+							</a>
+						</div>
+						<div id="timelineDiv" class="cellDisplay">
+<div class="timeline_box" ancestor_cell_id="37" ancestor_user_id="146" id="58" same_cell_id="37" original_cell_id="37" original_cell_user_id="146" cell_id="58" cell_user_id="145">
+<div class="timeline_top"><div class="profile" w="121">	<a href="#" class="nameCard" userid="146"><div class="photo"><span class="mask sp"></span>	<img src="images/@timeline_people.png" alt=""></div>	<strong class="name">Sandy</strong></a>	<span class="pr pr_sns sp">undefined</span>	<div class="put_bg"><span class="put_maskl sp"></span><span class="put_maskr sp"></span></div>	<div class="put"><a href="#" class="btnAddPeopleToCellbox pr_put sp" user_id="146" group_name="" >Add to</a></div></div><div class="info">	<span class="time">07/18</span></div></div><div class="content" style="margin-left:40px;"><div class="txt_group heightFixed" style="height: 18px;"><span class="">CMU people are doing really great work.</span></div><a href="#" class="btnFold clse">More<span class="sp"></span></a></div><div class="circle" style="width: 210px; height: 132px; background: url(images/5_stop.gif) no-repeat 0 0;" step="5">	<a href="cellmap.html"><img src="images/5_wave.gif" step="5"></a></div><div class="cellmap cellUp"><a href="#" class="add sp" style="display: block;">more</a>	<a href="#" class="addover sp" style="display: none;">Add</a>	<div class="cellmap_box" cell_id="58" cell_user_id="145"><a href="cellmap.html">Cellmap </a><em><a href="cellmap.html">26</a></em><span class="sp"></span></div>			<p class="cellmap_box_end"></p></div>
+<div class="timeline_bot" style="margin-left:40px;">	<ul>		<li class="common_like">			<dl>			<dt>				Like				<span class="layer_bot">Like this cell<span class="arr"></span></span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="58" user_id="145" type="LIKE">19</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Shared			<span class="layer_bot">Share this your people<span class="arr"></span></span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="58" user_id="145" type="SHARE">23</span></dd>			</dl>		</li>
+<li class="common_share">			<dl>			<dt>			Comments			<span class="layer_bot">Show all the comments relative to this topic<span class="arr"></span></span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="34" user_id="145" type="Comment">26</span></dd>			</dl>		</li>
+	</ul>	<div class="btn">		<a class="pr_del sp btnRemoveCell" href="#">Delete cell </a>	</div></div></div>
+
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Max.jpeg" alt=""></div>	<strong class="name">Max</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>Yes. I missed my time in CMU.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">10</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">8</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 05:25 pm</span><div class="btn">		</div></div></div>
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Camile.jpeg" alt=""></div>	<strong class="name">Camile</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>This reminds me of my visit there last year. Good university.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">3</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">9</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 05:52 pm</span><div class="btn">		</div></div></div>
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Tom.jpeg" alt=""></div>	<strong class="name">Tom</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>Enjoy working with them.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">3</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">3</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 05:59 pm</span><div class="btn">		</div></div></div>
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Jenny.jpeg" alt=""></div>	<strong class="name">Jenny</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>The performance of cell map is improved.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">6</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">5</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 06:16 pm</span><div class="btn">		</div></div></div>
+
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/sandra.jpeg" alt=""></div>	<strong class="name">Sandra</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>Good job.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">5</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">6</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 06:23 pm</span><div class="btn">		</div></div></div>
+
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Cathy.jpeg" alt=""></div>	<strong class="name">Cathy</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>Two months working together with them is a good experience for me.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">5</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">7</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 06:35 pm</span><div class="btn">		</div></div></div>
+
+<div class="com_box" ancestor_cell_id="15" ancestor_user_id="146" id="57" same_cell_id="57" cell_id="57" cell_user_id="145">
+<div class="timeline_top">
+	<div class="profile" w="121" style="float:left;">	<a href="#" class="nameCard" userid="145"><div class="photo"><span class="mask sp"></span>	<img src="images/Jason.jpeg" alt=""></div>	<strong class="name">Jason</strong></a></div>
+    <div class="info" style="float:left;width:580px;min-height:20px;margin-left:20px;">	
+<div class="txt_group heightFixed"><span>Goona miss them.</span></div>
+</div></div>
+<div class="timeline_bot">	<div style="float:left; margin-top:-10px;"><ul>		<li class="common_like">			<dl>			<dt>				Like				</span>			</dt>			<dd class="first"><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="LIKE">3</span></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Share			</span>			</dt>			<dd><span class="sp"></span><span class="num countLayer" cell_id="57" user_id="145" type="SHARE">5</span></dd>			</dl>		
+<li class="common_like">			<dl>			<dt>				Reply				</span>			</dt>			<dd class="first"></dd>			</dl>		</li>		<li class="common_share">			<dl>			<dt>			Delete			</span>			</dt>					</dl>		</li>
+</ul></div>	<span class="time" style="float:right;margin-top:-10px; padding:0 10px 0 0; color:#A0A0A0;">07/19 07:25 pm</span><div class="btn">		</div></div></div>
+
+
+
+
+
+<a class="comment_more" id="btnTimelineMore" href="#">Show More Comments</a>
+
+
+</div>
+					</div>
+				</div>
+				
+			<!-- </div>		 -->			
+		</div>
+		
+		
+			<!-- </div>	 -->
+		</div>
+	</div>
+</div>
+</div><!-- content end -->
+</div><!-- container end -->
+
+<!--footer-->
+
+<div id="footer">
+	<div class="inner_section">
+		<div class="footer_cont">
+		<p class="flogo"><span class="blind">Cellz</span></p>											
+		<ul class="f_menu">
+		
+		</ul>
+		<p class="copyright"><span class="bu_dot"></span>Copyright © Cellz. All rights Reserved.</p>
+		</div>
+	</div>
+</div>
+
+<!--footer end-->
+
+</div>
+
+
+
+</div>
+</div>
+
+<script type="text/javascript">
+var url;
+$(function() {
+	$( "#btnSelectFilter" ).draggable({
+	axis: "x" 
+	,containment: '#btnSelectFilterWrap'
+	,stop: function( event, ui ) {
+		if (ui.position.left >= 23) {
+			//add stop event; $.util_pageMover.moveToTimeline(oFilter.o.timelineFilter);
+		} else {
+			$(ui.helper).css({
+				left: 0
+			});
+		}
+	}
+});
+	
+	$("body").mCustomScrollbar({
+	    scrollInertia: 150
+	    ,theme: 'light'
+	    ,advanced:{
+	        updateOnContentResize: true
+	    }
+		,callbacks: {
+			whileScrolling: function() {
+				var top;
+				if (mcs) {
+					top = -mcs.top;
+					if ($('#rail_0').length > 0) $('#rail_0').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_1').length > 0) $('#rail_1').mCustomScrollbar("scrollTo", top);
+					if ($('#rail_2').length > 0) $('#rail_2').mCustomScrollbar("scrollTo", top);
+				}
+			}
+		}
+	});
+	$("#wrapCellMap #div_srcoll_area").mCustomScrollbar({
+	    scrollInertia: 150
+	    ,theme: 'light'
+	    ,advanced:{
+	        updateOnContentResize: true
+	    }
+	});
+	
+});
+</script>
+
+
+</body>
+</html>

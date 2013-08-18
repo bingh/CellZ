@@ -1,0 +1,24 @@
+/* sigma.js context : */
+#starView {
+	position: absolute;
+	top: 0px;
+}
+  .sigma-parent {
+    position: relative;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #222;
+    height : 800px;
+  }
+  .sigma-expand {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  }
+  .buttons-container{
+    padding-bottom: 8px;
+    padding-top: 12px;
+  }

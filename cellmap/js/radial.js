@@ -164,10 +164,9 @@ function addContent(waterdropCells) {
     picId = "images/profile/" + picId;
     placeholder.append("<div class='cellTop'><div class='profile' style='position:absolute; top: 0; left: 5%; width: 100%; height:100%; background-image: "+"url(" + picId +"); background-repeat: no-repeat" + "'></div><div class='cellAdd'></div></div>");
     if(i == 0) {
+      placeholder.append("<div class='cell_image'><img src='images/0.jpg'></div>");
       placeholder = placeholder.children(".cellTop");
       placeholder.append("<div class='content'>Here shows part of or full content based on node size. Content for this node is: <div style='color:blue'>" + nodes[i].content + "</div></div>");
-      placeholder = placeholder.parent();
-      placeholder.append("<div class='cell_image'><img src='images/champion.jpg'></div>");
     }
     else {
       if(nodes[i].merged != null) {
@@ -229,6 +228,7 @@ function draw() {
 
   $("#zoom_pane").css("-webkit-transform", "matrix(1, 0, 0, 1," + (-svgSide/2 + screenWidth/2) + "," + (-svgSide/2 + screenHeight) +")");
   $("#zoom_pane").css("-ms-transform", "matrix(1, 0, 0, 1," + (-svgSide/2 + screenWidth/2) + "," + (-svgSide/2 + screenHeight) +")");
+  $("#zoom_pane").css("transform", "matrix(1, 0, 0, 1," + (-svgSide/2 + screenWidth/2) + "," + (-svgSide/2 + screenHeight) +")");
 
   addClick();
   waterDropClick();
